@@ -136,8 +136,8 @@
 		//Set up the POST data
 		$data = array(
 		    'grant_type' => 'client_credentials',
-		    'client_id' => '430d36064e964ac29e44fdfed9b133c5',
-		    'client_secret' => '88623bfd5579482cb56f761a10d9d603'
+		    'client_id' => '_',
+		    'client_secret' => 'place API key here'
 		);
 
 		// Set up the cURL request
