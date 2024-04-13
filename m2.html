@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta name="description" content="GeoListen uses Spotify's latest API to dynamically print an updated World's Mix Playlist each time the program is opened. Learn here on the main page.">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+	<style>
+		body 
+		{
+			background: linear-gradient(225.24deg, #000205 -4.36%, #131518 118.8%);
+			text-align: center;
+			font-family: 'Noto Sans', sans-serif;
+/*			height: 3000px;*/
+		}
+
+		p
+		{
+			color: whitesmoke;
+			text-align: left;
+			font-size: 2em;
+
+		}
+
+		h1 {
+			color: whitesmoke;
+			margin-top: 0;
+			font-size: 4.5em;
+			position: absolute;
+			left: 50%;
+			top: 35%;
+			transform: translate(-50%, -50%);
+			width: 80%;
+			line-height: 1.5;
+		}
+
+		h2
+		{
+			color: #7289da;
+			text-align: right;
+			margin-right: 100px;
+			font-size: 3em;
+
+		}
+		.background-video 
+		{
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  			object-fit: cover;
+  			z-index: -1;
+		}	
+
+		nav 
+		{
+		 	margin-top: -750px;
+/*		 	margin-top: 5%;*/
+
+		}
+		nav ul 
+		{
+  			margin-top: 30px;
+  			margin-left: 150px;
+		}
+
+		nav li 
+		{
+  			float: left;
+		}
+
+		nav li a 
+		{
+  			display: block;
+  			color: white;
+  			text-align: center;
+  			padding: 14px 16px;
+ 			text-decoration: none;
+ 			font-size: 1.5em;
+		}
+
+		nav li a:hover 
+		{
+ 			color: #5865F2;
+/* 			color: #8684BD;*/
+
+		}
+
+		.row:first-child 
+		{
+		    min-height: 100vh;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		}	
+
+	</style>
+</head>
+<body>
+	
+	<div class="container-fluid">
+  <div class="row">
+    <h1>Meet GeoListen: <br> A Global Listening Agent</h1>
+		<video autoplay loop muted playsinline class="background-video"> 
+		  <source src="media/comptwo.mp4" type="video/mp4">
+		</video>
+    <nav>
+      <ul>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#why">About</a></li> 
+        <li><a href="signup.php" class="signup">Sign Up </a></li>
+        <li><a href="login.php">Log In</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="row">
+    <div class="col text-center">
+      <h2 id="tech">Introducing GeoListen</h2>
+      <p> GeoListen is a cutting-edge global listening agent designed to cater to the diverse musical tastes of music enthusiasts around the world. With GeoListen, users gain access to an unparalleled feature: the ability to explore and enjoy an updated selection of songs from a World's Mix Spotify playlist. This innovative platform goes beyond regional boundaries, allowing users to discover and immerse themselves in a rich tapestry of global music. From vibrant Latin rhythms to soulful African beats, Geolisten curates a dynamic collection that celebrates the diverse musical traditions and contemporary sounds from every corner of the globe. Whether you're a passionate music explorer or simply seeking to broaden your sonic horizons, GeoListen offers an exciting gateway to a truly global music experience. </p>
+
+      <img src ='media/map.jpeg' height='650' alt='empty photo'>
+      <br><br><br><br>
+      <h2 id="why">Why + The API</h2>
+      <p>The reason for utilizing Spotify's API in this project is to leverage its extensive music database and robust features for a seamless integration with the GeoListen platform. By leveraging the API, GeoListen gains access to the vast collection of songs, playlists, and other music-related data maintained by Spotify.</p>
+
+      <p>To ensure secure and authorized access to the Spotify API, the GeoListen script obtains a new access token each time it is called. This token serves as a form of authentication, allowing the script to make authorized requests and retrieve data from the Spotify API.</p>
+
+      <p>In the implementation of GeoListen, a secret metadata variable called "popularity" has been incorporated into the JSON object obtained from the Spotify API. This "popularity" variable is used to rank the songs within the playlist based on their popularity. By utilizing this metadata, GeoListen intelligently organizes the songs in the playlist, presenting users with a curated selection of tracks that have garnered significant attention and popularity among Spotify users.</p>
+
+      <p>Overall, the integration of Spotify's API in the GeoListen project enhances the user experience by providing a seamless connection to Spotify's extensive music library, ensuring authorized access through the use of access tokens, and incorporating metadata like "popularity" to rank the playlist for an optimized listening experience. </p>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
